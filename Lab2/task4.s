@@ -2,22 +2,31 @@
 .globl main
 
 main:
-    addi x7, x0, 0        # intialize i = 0 for outer loop in register x7     
+
+    addi x5, x0, 5        
+    addi x6, x0, 3         
+    addi x7, x0, 0          # i = 0
+
+    addi x10, x0, 0x200     # Base address of array D = 0x200
 
 L1:
-    addi x29, x0, 0       # intialize j = 0 for inner loop in register x29     
+    bge  x7, x5, end       # if (i >= a) exit outer loop
+
+    addi x29, x0, 0        # j = 0
 
 L2:
-    add  x11, x7, x29     # register x11 to hold i+j = x7+x29
-    slli x12, x29, 4      # shift left logic immediate-shift left by 4 bits (2^2) 
-    add  x12, x12, x10    # register x12 to hold offset for D. add base address in x10 of D to offset
-    sw   x11, 0(x12)      # store value i+j (x11) in memory at address x12
+    bge  x29, x6, nextval  # if (j >= b) exit inner loop
 
-    addi x29, x29, 1      # add 1 to j, inner loop
-    blt  x29, x6, L2      # checks if x29 (j) is less than x6 (b) and brances to L2, which is again inner loop [keep looping till j = b]
+    add  x11, x7, x29     # x11 = i + j
+    slli x12, x29, 4      # offset = 16 * j  (D[4*j])
+    add  x12, x10, x12    # address of D[4*j]
+    sw   x11, 0(x12)      # D[4*j] = i + j
 
-    addi x7, x7, 1        # add 1 to i, outer loop
-    blt  x7, x5, L1       # checks if x7 (i) is less than x5 (a) and brances to L1, which is again outer loop [keep looping till i = a]
+    addi x29, x29, 1      # j++
+    j    L2               # jump to Loop L2
 
+nextval:
+    addi x7, x7, 1        # i++
+    j    L1               # jump to Loop L1
 
-
+end:
