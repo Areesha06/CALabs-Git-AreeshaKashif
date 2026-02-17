@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/debouncer.v" \
+"../../../../project_1.srcs/sources_1/new/fsm.v" \
+"../../../../project_1.srcs/sources_1/new/fsm_counter.v" \
+"../../../../project_1.srcs/sources_1/new/seven_seg_driver.v" \
+"../../../../project_1.srcs/sources_1/new/switches.v" \
+"../../../../project_1.srcs/sources_1/new/top.v" \
+"../../../../project_1.srcs/sources_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
