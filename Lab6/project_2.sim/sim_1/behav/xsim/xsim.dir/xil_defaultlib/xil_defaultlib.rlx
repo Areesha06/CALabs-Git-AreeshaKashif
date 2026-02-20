@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/ak10347/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sim_1/new/alu_tb.v,1771308615,verilog,,,,ALU_tb,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/alu.v,1771311930,verilog,,C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/debouncer.v,,alu,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/debouncer.v,1771311072,verilog,,C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/fsm.v,,debouncer,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/fsm.v,1771311496,verilog,,C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/leds.v,,fsm,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/leds.v,1771311051,verilog,,C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/top.v,,leds,,,,,,,,
+C:/Users/ak10347/project_2/project_2.srcs/sources_1/new/top.v,1771314298,verilog,,,,ALU_Top,,,,,,,,
