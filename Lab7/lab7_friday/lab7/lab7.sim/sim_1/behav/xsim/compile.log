@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.srcs/sources_1/new/RF_ALU_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_ALU_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ReadData1' is not allowed [C:/Users/ak10347/lab7/lab7/lab7.srcs/sources_1/new/RegisterFile.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.srcs/sim_1/new/RF_ALU_FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_ALU_FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ak10347/lab7/lab7/lab7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

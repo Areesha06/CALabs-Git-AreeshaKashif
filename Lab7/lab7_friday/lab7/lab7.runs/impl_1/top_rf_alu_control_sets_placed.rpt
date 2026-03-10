@@ -1,0 +1,95 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Mar 10 09:19:43 2026
+| Host         : HU-DOPX-ML31 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_rf_alu_control_sets_placed.rpt
+| Design       : top_rf_alu
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     4 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    17 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           20 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             480 |          183 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |        Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                             | rst_IBUF         |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | fsm_inst/E[0]               | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_5[0]  | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg[0]    | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_0[0]  | rst_IBUF         |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_10[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_11[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_12[0] | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_2[0]  | rst_IBUF         |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_3[0]  | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_4[0]  | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_1[0]  | rst_IBUF         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_9[0]  | rst_IBUF         |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_6[0]  | rst_IBUF         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_7[0]  | rst_IBUF         |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | fsm_inst/btn_prev_reg_8[0]  | rst_IBUF         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG |                             |                  |               20 |             48 |         2.40 |
++----------------+-----------------------------+------------------+------------------+----------------+--------------+
+
+
