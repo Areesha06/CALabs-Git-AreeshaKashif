@@ -1,0 +1,27 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+=======================================================
+ Lab 9 - RISC-V Control Path Simulation
+=======================================================
+   Instr | opcode         funct3  f7[5] | RW AS MR MW M2R Br ALUOp | ALUCtrl
+-----------------------------------------------------------------------
+             ADD | opcode=0110011  funct3=000  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0010
+             SUB | opcode=0110011  funct3=000  funct7[5]=1 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0110
+             SLL | opcode=0110011  funct3=001  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0100
+             SRL | opcode=0110011  funct3=101  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0101
+             AND | opcode=0110011  funct3=111  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0000
+              OR | opcode=0110011  funct3=110  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0001
+             XOR | opcode=0110011  funct3=100  funct7[5]=0 | RW=1 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=10 | ALUCtrl=0011
+            ADDI | opcode=0010011  funct3=000  funct7[5]=0 | RW=1 AS=1 MR=0 MW=0 M2R=0 Br=0 ALUOp=11 | ALUCtrl=0010
+              LW | opcode=0000011  funct3=010  funct7[5]=0 | RW=1 AS=1 MR=1 MW=0 M2R=1 Br=0 ALUOp=00 | ALUCtrl=0010
+              LH | opcode=0000011  funct3=001  funct7[5]=0 | RW=1 AS=1 MR=1 MW=0 M2R=1 Br=0 ALUOp=00 | ALUCtrl=0010
+              LB | opcode=0000011  funct3=000  funct7[5]=0 | RW=1 AS=1 MR=1 MW=0 M2R=1 Br=0 ALUOp=00 | ALUCtrl=0010
+              SW | opcode=0100011  funct3=010  funct7[5]=0 | RW=0 AS=1 MR=0 MW=1 M2R=0 Br=0 ALUOp=00 | ALUCtrl=0010
+              SH | opcode=0100011  funct3=001  funct7[5]=0 | RW=0 AS=1 MR=0 MW=1 M2R=0 Br=0 ALUOp=00 | ALUCtrl=0010
+              SB | opcode=0100011  funct3=000  funct7[5]=0 | RW=0 AS=1 MR=0 MW=1 M2R=0 Br=0 ALUOp=00 | ALUCtrl=0010
+             BEQ | opcode=1100011  funct3=000  funct7[5]=0 | RW=0 AS=0 MR=0 MW=0 M2R=0 Br=1 ALUOp=01 | ALUCtrl=0110
+         ILLEGAL | opcode=1111111  funct3=000  funct7[5]=0 | RW=0 AS=0 MR=0 MW=0 M2R=0 Br=0 ALUOp=00 | ALUCtrl=0010
+=======================================================
+ Simulation complete.
+=======================================================
+$finish called at time : 160 ns : File "C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sim_1/new/tb_control_path.v" Line 118

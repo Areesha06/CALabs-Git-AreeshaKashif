@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.sim/sim_1/behav/xsim/glbl.v,1773721134,verilog,,,,glbl,,,,,,,,
+C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sim_1/new/tb_control_path.v,1773724318,verilog,,,,tb_control_path,,,,,,,,
+C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sources_1/new/alu_control.v,1773722489,verilog,,C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sources_1/new/main_control.v,,alu_control,,,,,,,,
+C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sources_1/new/main_control.v,1773722310,verilog,,C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.srcs/sim_1/new/tb_control_path.v,,main_control,,,,,,,,
