@@ -57,7 +57,7 @@ loop:
     sw   ra, 0(sp)          # save it on stack 
     jal  ra, delay_1sec     # wait
     lw   ra, 0(sp)          # restore value (since jal overwrites ra)
-    addi sp, sp,            # deallocate space
+    addi sp, sp, 4            # deallocate space
 
     addi s0, s0, -1         # decrement after displaying
     jal x0, loop            # go back to top

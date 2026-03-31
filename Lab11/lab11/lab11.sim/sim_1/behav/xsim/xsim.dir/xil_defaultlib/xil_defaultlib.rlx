@@ -1,0 +1,19 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/ak10347/lab11/lab11/lab11.sim/sim_1/behav/xsim/glbl.v,1774938275,verilog,,,,glbl,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sim_1/new/tb_task1.v,1774938275,verilog,,,,tb_Task1,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sim_1/new/tb_toplevel.v,1774938275,verilog,,,,tb_TopLevel,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/ALU.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Branchadder.v,,alu,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Branchadder.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/ImmGen.v,,branchAdder,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/DataMemory.v,1774939115,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/ImmGen.v,,DataMemory,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/ImmGen.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Mux2.v,,immGen,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/InstructionMemory.v,1774938934,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Mux2.v,,instructionMemory,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Mux2.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Pcadder.v,,mux2,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Pcadder.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Programcounter.v,,pcAdder,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/Programcounter.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sim_1/new/tb_task1.v,,ProgramCounter,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/RegisterFile.v,1774938916,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/TopLevelProcessor.v,,RegisterFile,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/TopLevelProcessor.v,1774940895,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/alu_control.v,,TopLevelProcessor,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/alu_control.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/maincontrol.v,,alu_control,,,,,,,,
+C:/Users/ak10347/lab11/lab11/lab11.srcs/sources_1/new/maincontrol.v,1774938275,verilog,,C:/Users/ak10347/lab11/lab11/lab11.srcs/sim_1/new/tb_toplevel.v,,main_control,,,,,,,,

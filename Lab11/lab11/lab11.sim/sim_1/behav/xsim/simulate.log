@@ -1,0 +1,28 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+
+--- Sequential PC increment (PCSrc = 0) ---
+  PC = 0x00000004  (expected 0x00000004)
+  PC = 0x00000008  (expected 0x00000008)
+  PC = 0x0000000c  (expected 0x0000000c)
+  PC = 0x00000010  (expected 0x00000010)
+  PC = 0x00000014  (expected 0x00000014)
+PASS  ter 5 increments : got 0x00000014
+
+--- Branch taken (PCSrc = 1) ---
+  PC = 0x0000001c  branch_target was 0x00000024
+FAIL  anch (20 + 8<<1) : expected 0x00000024, got 0x0000001c
+FAIL  ial after branch : expected 0x00000028, got 0x00000020
+
+--- Immediate Generation ---
+PASS   I-type imm (-5) : got 0xfffffffb
+PASS  -type imm (+100) : got 0x00000064
+PASS  pe LOAD imm (12) : got 0x0000000c
+PASS   S-type imm (-3) : got 0xfffffffd
+PASS  S-type imm (+20) : got 0x00000014
+PASS  B-type imm (+16) : got 0x00000010
+PASS   B-type imm (-8) : got 0xfffffff8
+
+--- Simulation complete ---
+
+$finish called at time : 83 ns : File "C:/Users/ak10347/lab11/lab11/lab11.srcs/sim_1/new/tb_task1.v" Line 132
