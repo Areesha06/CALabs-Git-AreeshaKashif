@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab11.srcs/sources_1/new/ALU.v" \
+"../../../../lab11.srcs/sources_1/new/Branchadder.v" \
+"../../../../lab11.srcs/sources_1/new/DataMemory.v" \
+"../../../../lab11.srcs/sources_1/new/ImmGen.v" \
+"../../../../lab11.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../lab11.srcs/sources_1/new/Mux2.v" \
+"../../../../lab11.srcs/sources_1/new/Pcadder.v" \
+"../../../../lab11.srcs/sources_1/new/Programcounter.v" \
+"../../../../lab11.srcs/sources_1/new/RegisterFile.v" \
+"../../../../lab11.srcs/sources_1/new/TopLevelProcessor.v" \
+"../../../../lab11.srcs/sources_1/new/alu_control.v" \
+"../../../../lab11.srcs/sources_1/new/clockdivider.v" \
+"../../../../lab11.srcs/sources_1/new/maincontrol.v" \
+"../../../../lab11.srcs/sources_1/new/sevenseg.v" \
+"../../../../lab11.srcs/sim_1/new/tb_toplevel.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

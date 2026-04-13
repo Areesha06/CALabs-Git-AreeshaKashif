@@ -1,0 +1,116 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Apr 11 12:56:02 2026
+| Host         : DESKTOP-H1FHSNK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopLevelProcessor_control_sets_placed.rpt
+| Design       : TopLevelProcessor
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     6 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              42 |           12 |
+| No           | Yes                   | No                     |              32 |           22 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1000 |          546 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------+------------------+------------------+----------------+--------------+
+|  slow_clk_BUFG | x10_monitor0             | reset_IBUF       |                2 |              8 |         4.00 |
+|  slow_clk_BUFG |                          | reset_IBUF       |               22 |             32 |         1.45 |
+|  slow_clk_BUFG | uRF/regs[15][31]_i_1_n_0 | reset_IBUF       |               17 |             32 |         1.88 |
+|  slow_clk_BUFG | uRF/regs[17][31]_i_1_n_0 | reset_IBUF       |               20 |             32 |         1.60 |
+|  slow_clk_BUFG | uRF/regs[13][31]_i_1_n_0 | reset_IBUF       |               15 |             32 |         2.13 |
+|  slow_clk_BUFG | uRF/regs[12][31]_i_1_n_0 | reset_IBUF       |               14 |             32 |         2.29 |
+|  slow_clk_BUFG | uRF/regs[16][31]_i_1_n_0 | reset_IBUF       |               15 |             32 |         2.13 |
+|  slow_clk_BUFG | uRF/regs[18][31]_i_1_n_0 | reset_IBUF       |               14 |             32 |         2.29 |
+|  slow_clk_BUFG | uRF/regs[19][31]_i_1_n_0 | reset_IBUF       |               14 |             32 |         2.29 |
+|  slow_clk_BUFG | uRF/regs[11][31]_i_1_n_0 | reset_IBUF       |               10 |             32 |         3.20 |
+|  slow_clk_BUFG | uRF/regs[14][31]_i_1_n_0 | reset_IBUF       |               13 |             32 |         2.46 |
+|  slow_clk_BUFG | uRF/regs[10][31]_i_1_n_0 | reset_IBUF       |               12 |             32 |         2.67 |
+|  slow_clk_BUFG | uRF/regs[1][31]_i_1_n_0  | reset_IBUF       |               20 |             32 |         1.60 |
+|  slow_clk_BUFG | uRF/regs[25][31]_i_1_n_0 | reset_IBUF       |               15 |             32 |         2.13 |
+|  slow_clk_BUFG | uRF/regs[22][31]_i_1_n_0 | reset_IBUF       |               19 |             32 |         1.68 |
+|  slow_clk_BUFG | uRF/regs[2][31]_i_1_n_0  | reset_IBUF       |               15 |             32 |         2.13 |
+|  slow_clk_BUFG | uRF/regs[5][31]_i_1_n_0  | reset_IBUF       |               21 |             32 |         1.52 |
+|  slow_clk_BUFG | uRF/regs[21][31]_i_1_n_0 | reset_IBUF       |               17 |             32 |         1.88 |
+|  slow_clk_BUFG | uRF/regs[8][31]_i_1_n_0  | reset_IBUF       |               24 |             32 |         1.33 |
+|  slow_clk_BUFG | uRF/regs[28][31]_i_1_n_0 | reset_IBUF       |               21 |             32 |         1.52 |
+|  slow_clk_BUFG | uRF/regs[29][31]_i_1_n_0 | reset_IBUF       |               19 |             32 |         1.68 |
+|  slow_clk_BUFG | uRF/regs[20][31]_i_1_n_0 | reset_IBUF       |               17 |             32 |         1.88 |
+|  slow_clk_BUFG | uRF/regs[31][31]_i_1_n_0 | reset_IBUF       |               18 |             32 |         1.78 |
+|  slow_clk_BUFG | uRF/regs[7][31]_i_1_n_0  | reset_IBUF       |               23 |             32 |         1.39 |
+|  slow_clk_BUFG | uRF/regs[26][31]_i_1_n_0 | reset_IBUF       |               19 |             32 |         1.68 |
+|  slow_clk_BUFG | uRF/regs[3][31]_i_1_n_0  | reset_IBUF       |               20 |             32 |         1.60 |
+|  slow_clk_BUFG | uRF/regs[24][31]_i_1_n_0 | reset_IBUF       |               12 |             32 |         2.67 |
+|  slow_clk_BUFG | uRF/regs[30][31]_i_1_n_0 | reset_IBUF       |               20 |             32 |         1.60 |
+|  slow_clk_BUFG | uRF/regs[6][31]_i_1_n_0  | reset_IBUF       |               24 |             32 |         1.33 |
+|  slow_clk_BUFG | uRF/regs[4][31]_i_1_n_0  | reset_IBUF       |               17 |             32 |         1.88 |
+|  slow_clk_BUFG | uRF/regs[9][31]_i_1_n_0  | reset_IBUF       |               27 |             32 |         1.19 |
+|  slow_clk_BUFG | uRF/regs[23][31]_i_1_n_0 | reset_IBUF       |               15 |             32 |         2.13 |
+|  slow_clk_BUFG | uRF/regs[27][31]_i_1_n_0 | reset_IBUF       |               17 |             32 |         1.88 |
+|  slow_clk_BUFG | uRF/p_0_in0_in[0]        |                  |                8 |             32 |         4.00 |
+|  slow_clk_BUFG | uRF/p_0_in0_in[2]        |                  |                8 |             32 |         4.00 |
+|  slow_clk_BUFG | uRF/p_0_in0_in[1]        |                  |                8 |             32 |         4.00 |
+|  slow_clk_BUFG | uRF/p_0_in0_in[3]        |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG |                          | reset_IBUF       |               12 |             42 |         3.50 |
++----------------+--------------------------+------------------+------------------+----------------+--------------+
+
+

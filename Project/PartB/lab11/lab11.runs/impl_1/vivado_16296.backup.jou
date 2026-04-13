@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Apr 11 11:42:41 2026
+# Process ID: 16296
+# Current directory: C:/Users/Areesha/lab11/lab11.runs/impl_1
+# Command line: vivado.exe -log TopLevelProcessor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopLevelProcessor.tcl -notrace
+# Log file: C:/Users/Areesha/lab11/lab11.runs/impl_1/TopLevelProcessor.vdi
+# Journal file: C:/Users/Areesha/lab11/lab11.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevelProcessor.tcl -notrace

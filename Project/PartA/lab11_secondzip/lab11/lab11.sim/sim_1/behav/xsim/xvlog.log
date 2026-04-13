@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/Branchadder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/Mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/Pcadder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/Programcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/maincontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/Lab8/lab11/lab11.srcs/sim_1/new/tb_toplevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TopLevel

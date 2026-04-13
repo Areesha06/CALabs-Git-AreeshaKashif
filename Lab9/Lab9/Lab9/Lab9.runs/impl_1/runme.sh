@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ak10347/Lab9/Lab9/Lab9/Lab9.runs/impl_1'
+HD_PWD='C:/Users/Areesha/OneDrive - Habib University/Semester 4/CA/Lab/CALabs-Git-AreeshaKashif/Lab9/Lab9/Lab9/Lab9.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

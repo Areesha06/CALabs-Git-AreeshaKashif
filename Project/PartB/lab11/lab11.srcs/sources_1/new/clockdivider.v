@@ -1,0 +1,19 @@
+module clock_divider #(parameter DIV = 5000000)(
+    input  wire clk_in,
+    input  wire reset,
+    output reg  clk_out = 0
+);
+    reg [$clog2(DIV)-1:0] counter;  // only 23 bits, not 32
+
+    always @(posedge clk_in or posedge reset) begin
+        if (reset) begin
+            counter <= 0;
+            clk_out <= 0;
+        end else if (counter == DIV - 1) begin
+            counter <= 0;
+            clk_out <= ~clk_out;
+        end else begin
+            counter <= counter + 1;
+        end
+    end
+endmodule
