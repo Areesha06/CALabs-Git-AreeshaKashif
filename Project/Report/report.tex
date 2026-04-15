@@ -53,8 +53,7 @@ The design was written in Verilog and implemented on the Basys 3 FPGA.
 The standard flow was used:
 \begin{itemize}
 \item Functional Simulation
-\item Synthesis
-\item Implementation
+\item Synthesis and Implementation
 \item Bitstream Generation
 \end{itemize}
 
@@ -70,17 +69,18 @@ The program reads an input value from a fixed memory-mapped address and displays
 
 Inside the countdown loop, the value is decremented using the ALU and continuously checked using a branch instruction. After completion, control returns to the main program, forming a continuous execution cycle.
 
-\subsubsection*{Processor Features Used}
-
-The program demonstrates the use of:
+\subsubsection*{Processor Features Used:} 
 \begin{itemize}
-\item Function calls using \texttt{jal}
-\item Branching for loop termination
-\item ALU-based decrement operations
-\item Register file and stack for state preservation
-\item Memory-mapped input/output for hardware interaction
-\end{itemize}
+\item The countdown routine is executed using a \texttt{jal} instruction, which stores the return address in \texttt{ra} and transfers control to the function.
 
+\item Inside the countdown loop, the value is decremented using the ALU and repeatedly checked using branch instructions.
+
+\item The stack is used to preserve the return address and temporary registers during function calls, ensuring correct program execution flow.
+
+\item Conditional branching is used to control loop continuation and termination, while reset behavior demonstrates external control flow through the FPGA reset signal.
+
+\item After completing the countdown, the program returns to the input stage using an unconditional jump, forming a continuous execution cycle.
+\end{itemize}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.1\textwidth]{taskA.png}
@@ -121,7 +121,7 @@ Implemented by:
 % ==========================================================
 \subsection*{Table: Main Control Unit}
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lccccccccc}
@@ -176,7 +176,7 @@ PC (7-seg) & Instruction & LED Pattern [15:4] \\
 \end{figure}
 
 % ==========================================================
-\section{Task C: Program Description}
+\section{Task C: GCD (Greatest Common Divisor) Program Description}
 
 A GCD calculator was implemented using the subtraction-based Euclidean algorithm.
 
@@ -197,7 +197,7 @@ A GCD calculator was implemented using the subtraction-based Euclidean algorithm
 \textbf{Implementation Details:}
 \begin{itemize}
 \item Uses a subroutine with proper stack handling
-\item Return address (ra) is saved and restored
+\item Return address (ra) is saved and restored using stack
 \item Loop uses conditional branching (including BLTU)
 \end{itemize}
 

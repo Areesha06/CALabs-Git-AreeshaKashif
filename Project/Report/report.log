@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.1.31)  15 APR 2026 22:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.1.31)  15 APR 2026 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,15 +426,15 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 12B7AF6A24DD51F4E6634D9042895839;1518.
+(rerunfilecheck)             Checksum: 33FF0D470165568CAD8D8C3D31933B08;1686.
  ) 
 Here is how much of TeX's memory you used:
  10455 strings out of 408650
  158680 string characters out of 5743192
- 587056 words of memory out of 5000000
+ 588224 words of memory out of 5000000
  33403 multiletter control sequences out of 15000+600000
  562666 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,11n,79p,1307b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,11n,79p,1307b,394s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.xdv (4 pages, 49540 bytes).
+Output written on report.xdv (4 pages, 54712 bytes).
